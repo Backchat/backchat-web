@@ -22,11 +22,6 @@
 
 body {
   color: white;
-  background: url('../img/bg.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 * {
@@ -38,6 +33,11 @@ html, body {
 }
 
 #content {
+  background: url('../img/bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   min-height: 100%;
   margin-bottom: -50px;
 }
@@ -62,22 +62,4 @@ html, body {
   color: white;
   text-decoration: none;
   margin: 0 1% 0 1%;
-}
-
-#bar-1, #bar-2 {
-  font-family: 'proxima_nova_rgbold', sans-serif;
-  background-color: #292929;
-  padding: 10px;
-}
-
-#bar-1 {
-  width: 450px;
-  margin-left: 200px;
-  font-size: 4.5em;
-}
-
-#bar-2 {
-  width: 550px;
-  margin-left: 25%;
-  font-size: 6em;
 }
