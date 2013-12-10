@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='css/home.css' rel='stylesheet'>
+    <link href='css/base.css' rel='stylesheet'>
     <script src='//code.jquery.com/jquery-2.0.3.min.js'></script>
     <script src='js/app.js'></script>
   </head>
 
   <body>
-    <div id='overlay' style='display:none;'></div>
-    <div id='content'></div>
-    <div id='video-modal' style='display:none;'>
-      <iframe width='960' height='540' src='//www.youtube-nocookie.com/embed/y6QGP0OUaV4?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>
+    <div id='video-overlay' style='display:none;'></div>
+    <div id='content'>
+      <div id='download-overlay' style='display:none;'></div>
+    </div>
+    <div id='video-modal' style='display:none;'></div>
+    <div id='download-modal' style='display:none;'>
+      <a href='https://itunes.apple.com/us/app/backdoor/id659951602?ls=1&mt=8'>
+        <img src='img/iOS.png' width='80px' id='ios'>
+      </a>
+      <img src='img/Android.png' id='android'>
     </div>
 
     <footer id='footer'>
-      <a href=''>DOWNLOAD</a>
+      <a id='download' href='#'>DOWNLOAD</a>
       <a href='http://blog.getbackchat.com/'>BLOG</a>
       <a href=''>SUPPORT</a>
-      <a href='https://backchat.recruiterbox.com/'>JOBS</a>
+      <a href='jobs.html'>JOBS</a>
       <a href='privacy.html'>PRIVACY</a>
       <a href='terms.html'>TERMS</a>
     </footer>

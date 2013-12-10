@@ -63,6 +63,15 @@ html, body {
   color: white;
   text-decoration: none;
   margin: 0 1% 0 1%;
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  padding-left: 1%;
+  padding-right: 1%;
+  line-height: 50px;
+}
+
+#footer a:hover {
+  background-color: #333333;
 }
 
 #video-modal {
@@ -73,7 +82,18 @@ html, body {
   margin-top: -270px;
 }
 
-#overlay {
+#download-modal {
+  width: 225px;
+  height: 120px;
+  position: absolute;
+  top: 82.5%;
+  left: 31.5%;
+  margin-left: -223px;
+  margin-top: -45px;
+  background-color: #292929;
+}
+
+#video-overlay {
   background-color: black;
   opacity: .5;
   position: absolute;
@@ -81,4 +101,29 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#download-overlay {
+  background-color: black;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#android, #ios {
+  width: 80px;
+  height: 80px;
+}
+
+#android {
+  float: right;
+  padding-right: 20px;
+}
+
+#ios {
+  float: left;
+  padding-left: 20px;
 }
