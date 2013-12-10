@@ -12,8 +12,8 @@ $(document).ready(function() {
   });
 
   $('#download').on('click', function() {
-    $('#download-overlay').css('display', 'block');
     $('#download-modal').css('display', 'block');
+    $('#download-overlay').css('display', 'block');
   });
 
   $('#download-overlay').on('click', function() {
