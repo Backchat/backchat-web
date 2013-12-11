@@ -70,6 +70,7 @@ html, body {
 
 #footer a:hover {
   background-color: #333333;
+  text-decoration: none;
 }
 
 a {
@@ -77,6 +78,10 @@ a {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 30;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1, h2, h3 {
