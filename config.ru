@@ -20,7 +20,7 @@ map "/download" do
     	if (/iPhone OS/ =~ env['HTTP_USER_AGENT']) != nil
     	   [ 302, {'Location'=> 'https://itunes.apple.com/us/app/backdoor/id659951602?ls=1&mt=8' }, [] ] 
 	else
-	   [ 302, {'Location'=> 'https://play.google.com' }, [] ] 
+	   [ 302, {'Location'=> 'https://play.google.com/store/apps/details?id=com.youtell.backchat' }, [] ] 
 	end
 	}
 end
