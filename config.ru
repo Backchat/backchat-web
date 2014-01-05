@@ -15,6 +15,16 @@ run lambda { |env|
 }
 end
 
+map "/download" do
+    run lambda {|env|
+    	if (/iPhone OS/ =~ env['HTTP_USER_AGENT']) != nil
+    	   [ 302, {'Location'=> 'https://itunes.apple.com/us/app/backdoor/id659951602?ls=1&mt=8' }, [] ] 
+	else
+	   [ 302, {'Location'=> 'https://play.google.com' }, [] ] 
+	end
+	}
+end
+
 map "/" do
 run lambda { |env|
   [
