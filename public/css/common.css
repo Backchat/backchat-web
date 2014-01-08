@@ -9,6 +9,7 @@
 }
 
 #footer {
+  float: left;
   text-align: center;
   background-color: #292929;
   position: fixed;
@@ -41,7 +42,7 @@
 
 #download-modal {
   width: 12.5%;
-  height: 15%;
+  height: 7.5%;
   position: fixed;
   left: 12.50%;
   bottom: 7.50%;
