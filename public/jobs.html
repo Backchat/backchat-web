@@ -2,6 +2,8 @@
 <html>
   <head>
     <link href='css/text.css' rel='stylesheet'>
+    <script src='//code.jquery.com/jquery-2.0.3.min.js'></script>
+    <script src='js/app.js'></script>
     <title>Jobs</title>
   </head>
 
@@ -28,14 +30,23 @@
       <a href='https://backchat.recruiterbox.com/'>Check out our current openings</a>
     </div>
 
-    <footer id='footer'>
-      <a id='home' href='/'>HOME</a>
-      <a id='download' href='#'>DOWNLOAD</a>
-      <a href='http://blog.getbackchat.com/'>BLOG</a>
-      <a href=''>SUPPORT</a>
-      <a href='jobs.html'>JOBS</a>
-      <a href='privacy.html'>PRIVACY</a>
-      <a href='terms.html'>TERMS</a>
+    <div id='download-overlay' style='display:none;'></div>
+    <div id='download-modal' style='display:none;'>
+      <a href='https://itunes.apple.com/us/app/backdoor/id659951602?ls=1&mt=8'>
+        <img src='img/iOS.png' width='80px' id='ios'>
+      </a>
+      <img src='img/Android.png' id='android'>
+    </div>
+
+    <footer id='footer' style='float:left'>
+      <div><a id='home' href='/'>HOME</a></div>
+      <div><a id='download' href='#'>DOWNLOAD</a></div>
+      <div><a href='http://blog.getbackchat.com/'>BLOG</a></div>
+      <div><a href=''>SUPPORT</a></div>
+      <div><a href='jobs.html'>JOBS</a></div>
+      <div><a href='privacy.html'>PRIVACY</a></div>
+      <div><a href='terms.html'>TERMS</a></div>
+      <div><a href='about.html'>ABOUT</a></div>
     </footer>
   </body>
 </html>

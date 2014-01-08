@@ -1,3 +1,5 @@
+@import "common.css";
+
 @font-face {
   font-family: 'proxima_novasemibold';
   src: url('../fonts/proximanova-semibold-webfont.eot');
@@ -24,6 +26,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   color: #666;
+  padding-top: 100px;
 }
 
 * {
@@ -40,48 +43,6 @@ html, body {
   width: 60%;
   min-height: 100%;
   margin-bottom: -50px;
-}
-
-#content:after {
-  content: '';
-  display: block;
-}
-
-#footer, #content:after {
-  height: 50px;
-}
-
-#footer {
-  text-align: center;
-  background-color: #292929;
-}
-
-#footer a {
-  margin: 0 1% 0 1%;
-  padding-top: 0.4%;
-  padding-bottom: 0.4%;
-  padding-left: 1%;
-  padding-right: 1%;
-  line-height: 50px;
-  color: white;
-  font-size: 2em;
-  font-family: 'proxima_novasemibold', sans-serif;
-}
-
-#footer a:hover {
-  background-color: #333333;
-  text-decoration: none;
-}
-
-a {
-  color: #349aff;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 30;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 h1, h2, h3 {
