@@ -1,5 +1,5 @@
 use Rack::Static,
-  urls: ['/img', '/fonts', '/css', '/privacy.html', '/terms.html', '/about.html', '/js', '/jobs.html', '/favicon.ico', '/favicon@2x.ico'],
+  urls: ['/img', '/fonts', '/css', '/index.html', '/privacy.html', '/terms.html', '/about.html', '/js', '/jobs.html', '/favicon.ico', '/favicon@2x.ico'],
   root: 'public'
 
 map "/" do
