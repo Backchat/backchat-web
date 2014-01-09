@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#video-overlay').css('display', 'none');
   });
 
-  $('#download').on('click', function() {
+  $('#inc-footer').on('click', function() {
     switch (isVisible)
     {
     case 0:
