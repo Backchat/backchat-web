@@ -16,7 +16,7 @@ html, body {
 }
 
 #content {
-  background: url('');
+  background: none !important;
   color: black;
   margin-left: auto;
   margin-right: auto;
