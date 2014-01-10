@@ -18,6 +18,18 @@ $(document).ready(function() {
     case 0:
       $('#download-modal').css('display', 'block');
       $('#download-overlay').css('display', 'block');
+
+      var x=0;
+      var modal = document.getElementById('download-modal');
+      var dl = document.getElementById('download');
+      while(dl!=null){
+        x += dl.offsetLeft;
+        dl = dl.offsetParent;
+      }
+      var temp = (document.getElementById('download').offsetWidth - document.getElementById('download-modal').offsetWidth)/2;
+      modal.style.left = x + temp + "px";
+      modal.style.top = document.getElementById('footer').offsetTop - document.getElementById('download-modal').offsetHeight + "px";
+
       isVisible=1;
       break;
     case 1:

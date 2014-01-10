@@ -31,6 +31,7 @@
 }
 
 #footer {
+  display: table;
   float: left;
   text-align: center;
   background-color: #292929;
@@ -41,9 +42,9 @@
   margin-top: 7.5%;
 }
 
-#footer div {
-  float: left;
-  width: 12.50%; /* 100/[number of links] */
+#footer p {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #footer a {
@@ -59,18 +60,15 @@
 }
 
 #footer a:hover {
-  text-decoration: underline;
-  color: gray;
+  background-color: #333333;
 }
 
 #download-modal {
   width: 160px;
   height: 80px;
-  position: fixed;
-  left: 12.50%;
-  bottom: 7.50%;
   background-color: #292929;
   z-index: 9999;
+  position: fixed;
 }
 
 #download-overlay {
