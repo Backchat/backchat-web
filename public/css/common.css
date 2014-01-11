@@ -100,7 +100,7 @@ a {
 }
 
 /* From here down is regarding the mobile sites */
-@media (max-width: 1150px) {
+@media (max-width: 1224px) {
   
   @media (orientation:portrait) {
 
@@ -128,12 +128,12 @@ a {
 
     #home     {background-color: #404040;}
     #download {background-color: #353535;}
-    #blog     {background-color: #252525;}
-    #support  {background-color: #202020;}
-    #jobs     {background-color: #151515;}
-    #privacy  {background-color: #101010;}
-    #terms    {background-color: #050505;}
-    #about    {background-color: #000000;}
+    #blog     {background-color: #303030;}
+    #support  {background-color: #252525;}
+    #jobs     {background-color: #202020;}
+    #privacy  {background-color: #151515;}
+    #terms    {background-color: #101010;}
+    #about    {background-color: #050505;}
   }
 
   @media (orientation:landscape) {
