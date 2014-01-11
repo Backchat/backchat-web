@@ -15,6 +15,10 @@ html, body {
   height: 100%;
 }
 
+#content:after {
+  padding-bottom: 0;
+}
+
 #backchat {
   background: url('../img/bg.png') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -46,12 +50,12 @@ html, body {
   
   @media (orientation:portrait) {
     #content {
-      height: 75%;
+      height: 65%;
     }
 
     #backchat {
       background-position: top;
-      background-size: 100% 50%;
+      background-size: 100% 65%;
     }
     #footer {
       height: 35%;

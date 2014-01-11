@@ -23,11 +23,10 @@
 #content:after {
   content: "";
   display: block;
-  padding-bottom: calc(7.5% + 5%);
 }
 
 #content {
-  height: 7.5%;
+  height: 92.5%;
 }
 
 #footer {
@@ -104,11 +103,10 @@ a {
 @media (max-width: 1150px) {
   
   @media (orientation:portrait) {
-    #content:after {
-      padding-bottom: 80%;
-    }
 
     #footer {
+      position: absolute important;
+      overflow: hidden;
       margin-top: 40%;
       height: 40%;
     }
@@ -117,7 +115,7 @@ a {
       display: table;
       width: 100%;
       height: 12.5%;
-      border-top: 2px solid white;
+      /*border-top: 2px solid white;*/
     }
 
     #footer a {
@@ -127,12 +125,18 @@ a {
       width: 100%;
       height: 100%;
     }
+
+    #home     {background-color: #505050;}
+    #download {background-color: #454545;}
+    #blog     {background-color: #404040;}
+    #support  {background-color: #353535;}
+    #jobs     {background-color: #303030;}
+    #privacy  {background-color: #252525;}
+    #terms    {background-color: #202020;}
+    #about    {background-color: #000000;}
   }
 
   @media (orientation:landscape) {
-    #content:after {
-      padding-bottom: 20%;
-    }
 
     #footer {
       float: left;
