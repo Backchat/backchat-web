@@ -54,7 +54,7 @@ p {
 }
 
 /* From here down is regarding the mobile sites */
-@media (max-width: 1223px) {
+@media (max-width: 1224px) {
   #content {
     margin-right: 5%;
     margin-left: 5%;
