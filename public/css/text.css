@@ -83,6 +83,10 @@ p {
   }
 
   @media (orientation:landscape) {
+    #content {
+      font-size: 2em;
+    }
+
     #content:after {
       padding-bottom: 10%;
     }

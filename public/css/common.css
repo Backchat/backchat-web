@@ -126,13 +126,13 @@ a {
       height: 100%;
     }
 
-    #home     {background-color: #505050;}
-    #download {background-color: #454545;}
-    #blog     {background-color: #404040;}
-    #support  {background-color: #353535;}
-    #jobs     {background-color: #303030;}
-    #privacy  {background-color: #252525;}
-    #terms    {background-color: #202020;}
+    #home     {background-color: #404040;}
+    #download {background-color: #353535;}
+    #blog     {background-color: #252525;}
+    #support  {background-color: #202020;}
+    #jobs     {background-color: #151515;}
+    #privacy  {background-color: #101010;}
+    #terms    {background-color: #050505;}
     #about    {background-color: #000000;}
   }
 
