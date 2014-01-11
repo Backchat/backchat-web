@@ -23,28 +23,25 @@
 #content:after {
   content: "";
   display: block;
-  padding-bottom: 100px;
+  padding-bottom: calc(7.5% + 5%);
 }
 
-#footer, #content {
+#content {
   height: 7.5%;
 }
 
 #footer {
   display: table;
-  float: left;
   text-align: center;
   background-color: #292929;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  margin-top: 7.5%;
 }
 
-#footer p {
-  display: table-cell;
-  vertical-align: middle;
+#footer div {
+  display: inline;
 }
 
 #footer a {
@@ -83,6 +80,7 @@
 
 #download-modal img:hover {
   background-color: #333333;
+  cursor: pointer;
 }
 
 #android, #ios {
@@ -100,4 +98,50 @@ a {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 30;
   text-decoration: none;
+}
+
+/* From here down is regarding the mobile sites */
+@media (max-width: 1150px) {
+  
+  @media (orientation:portrait) {
+    #content:after {
+      padding-bottom: 80%;
+    }
+
+    #footer {
+      margin-top: 40%;
+      height: 40%;
+    }
+
+    #footer div {
+      display: table;
+      width: 100%;
+      height: 12.5%;
+      border-top: 2px solid white;
+    }
+
+    #footer a {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 3em;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (orientation:landscape) {
+    #content:after {
+      padding-bottom: 20%;
+    }
+
+    #footer {
+      float: left;
+      margin-top: 5%;
+      height: 5%;
+    }
+
+    #footer a{
+      font-size: 1em;
+    }
+  }
 }

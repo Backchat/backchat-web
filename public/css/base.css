@@ -11,8 +11,11 @@ body {
 html, body {
   height: 100%;
 }
-
 #content {
+  height: 100%;
+}
+
+#backchat {
   background: url('../img/bg.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,7 +23,6 @@ html, body {
   background-size: cover;
   cursor: pointer;
   min-height: 100%;
-  margin-bottom: -50px;
 }
 
 #video-modal {
@@ -39,4 +41,43 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1150px) {
+  
+  @media (orientation:portrait) {
+    #content {
+      height: 75%;
+    }
+
+    #backchat {
+      background-position: top;
+      background-size: 100% 50%;
+    }
+    #footer {
+      height: 35%;
+    }
+    #footer div {
+      vertical-align: middle;
+      height: 14.25%;
+    }
+  }
+  @media (orientation:landscape) {
+    @media (device-aspect-ratio: 2/3), (device-aspect-ratio: 3/2) {
+      #backchat {
+        background: url('../img/bg_3_2.png') no-repeat center center fixed;   
+      }
+    }
+
+    @media (device-aspect-ratio: 3/4), (device-aspect-ratio: 4/3) {
+      #backchat {
+        background: url('../img/bg_4_3.png') no-repeat center center fixed;   
+      }
+    }
+
+    @media (device-aspect-ratio: 9/16), (device-aspect-ratio: 16/9) {
+      #backchat {
+        background: url('../img/bg_16_9.png') no-repeat center center fixed;   
+      }
+    }
+  }
 }
