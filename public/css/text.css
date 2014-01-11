@@ -54,20 +54,27 @@ p {
 }
 
 /* From here down is regarding the mobile sites */
-@media (max-width: 1150px) {
+@media (max-width: 1223px) {
   #content {
     margin-right: 5%;
     margin-left: 5%;
     width: 90%;
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+  @media (min-width: 768px) {
+    #content {
+      font-size: 3em;
+    }
   }
   
   @media (orientation:portrait) {
     #footer {
       position: static;
+      bottom: 0;
       margin: auto;
     }
     #content {
+      min-height: 72%;
       height: auto;
     }
     #content:after {
