@@ -37,7 +37,7 @@ html, body {
   margin-top: -270px;
   /* Added for text */
   width: 960px;
-  height: 450px;
+  height: auto;
   text-align: center;
   background-color: green;
   border: 3px black solid;
@@ -100,6 +100,15 @@ html, body {
     #backchat {
       background-size: 100% 100%;
     }
+    /* when video arrives reemove */
+    #video-modal {
+      margin-top: auto;
+      top: 30px;
+    }
+    #video-modal span {
+      font-size: 4em;
+    }
+    /* remove til here */
     @media (device-aspect-ratio: 2/3), (device-aspect-ratio: 3/2) {
       #backchat {
         background: url('../img/bg_3_2.png') no-repeat center center fixed;   

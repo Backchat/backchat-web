@@ -14,7 +14,7 @@ $(document).ready(function() {
     }
     else {
       $('#video-modal').css('display', 'block');
-      $('#video-modal').append("<span>The #GETBACKCHAT video will be released on the 31st of January. Come back to see it!</span>");
+      $('#video-modal').append("<span>The #GETBACKCHAT video will be released on the 31st of January. Come back to see it!<br></br></span>");
       /*$('#video-modal').append("<iframe width='960' height='540' src='" + YOUTUBE_LINK + "' frameborder='0' allowfullscreen></iframe>");*/
       $('#video-overlay').css('display', 'block');
     }
