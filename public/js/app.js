@@ -7,18 +7,31 @@ $(document).ready(function() {
   var YOUTUBE_LINK = "//www.youtube-nocookie.com/embed/y6QGP0OUaV4?rel=0&autoplay=1";
   $('#backchat').on('click', function() {
     if (isIos || isAndroid) {
-      window.location.assign(YOUTUBE_LINK);
+      /* window.location.assign(YOUTUBE_LINK); */
+      $('#video-modal').css('display', 'block');
+      $('#video-overlay').css('display', 'block');
+      $('#video-modal').append("<span>THE #GETBACKCHAT VIDEO WILL BE RELEASED ON THE 31st OF JANUARY. COME BACK TO SEE IT!</span>");
     }
     else {
       $('#video-modal').css('display', 'block');
-      $('#video-modal').append("<iframe width='960' height='540' src='" + YOUTUBE_LINK + "' frameborder='0' allowfullscreen></iframe>");
+      $('#video-modal').append("<span>The #GETBACKCHAT video will be released on the 31st of January. Come back to see it!</span>");
+      /*$('#video-modal').append("<iframe width='960' height='540' src='" + YOUTUBE_LINK + "' frameborder='0' allowfullscreen></iframe>");*/
       $('#video-overlay').css('display', 'block');
     }
   });
+  /* remove when movie exists */
+  $('#video-modal').on('click', function() {
+    $('#video-modal').css('display', 'none');
+    $('#video-overlay').css('display', 'none');
+    /**/
+    $('#video-modal span').remove();
+  })
+  /*til here */
 
   $('#video-overlay').on('click', function() {
     $('#video-modal').css('display', 'none');
-    $('#video-modal iframe').remove();
+    /*$('#video-modal iframe').remove();*/
+    $('#video-modal span').remove();
     $('#video-overlay').css('display', 'none');
   });
 

@@ -35,7 +35,21 @@ html, body {
   position: absolute;
   margin-left: -480px;
   margin-top: -270px;
+  /* Added for text */
+  width: 960px;
+  height: 450px;
+  text-align: center;
+  background-color: green;
+  border: 3px black solid;
 }
+
+#video-modal span {
+  font-size: 5em;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+/* til here*/ 
 
 #video-overlay {
   background-color: black;
@@ -64,6 +78,23 @@ html, body {
       vertical-align: middle;
       height: 14.25%;
     }
+
+    /* Added until video will be ready */
+    #video-modal {
+      background-color: black;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 20%;
+      left: 0;
+      margin: auto;
+    }
+
+    #video-modal span {
+      font-size: 4em;
+      width: 80%;
+    }
+    /* til here */
   }
   @media (orientation:landscape) {
     #backchat {
