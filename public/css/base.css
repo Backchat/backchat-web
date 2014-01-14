@@ -27,7 +27,9 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   cursor: pointer;
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
 }
 
 #video-modal {
@@ -38,18 +40,18 @@ html, body {
   margin-top: -270px;*/
   /* Added for text */
   position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
+  top: 15%;
+  left: 15%;
+  width: 70%;
   height: auto;
   text-align: center;
-  background-color: green;
+  background-color: #00BB00;
   border: 3px #292929 solid;
 }
 
 #video-modal img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   /*height: auto;
   width: auto;*/
 }
@@ -85,7 +87,7 @@ html, body {
 
     /* Added until video will be ready */
     #video-modal {
-      background-color: #292929;
+      background-color: #404040;
       width: 100%;
       height: auto;
       position: absolute;
