@@ -86,8 +86,6 @@ html, body {
       width: 100%;
       height: auto;
       position: absolute;
-      top: 20%;
-      left: 0;
       margin: auto;
     }
 
@@ -102,6 +100,7 @@ html, body {
     #backchat {
       width: 100%;
       height: 100%;
+      background-size: 100% 100%;
     }
     /* when video arrives reemove */
     #video-modal {

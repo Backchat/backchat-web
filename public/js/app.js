@@ -13,6 +13,7 @@ $(document).ready(function() {
     }
     else {*/
       $('#video-modal').css('display', 'block');
+      $('#video-modal img').remove();
       $('#video-modal').append("<img src='/img/VideonotdoneyetTEXT.png'></img>");
       /*$('#video-modal').append("<iframe width='960' height='540' src='" + YOUTUBE_LINK + "' frameborder='0' allowfullscreen></iframe>");*/
       $('#video-overlay').css('display', 'block');
