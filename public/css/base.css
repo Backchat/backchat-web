@@ -27,6 +27,7 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   cursor: pointer;
+  position: fixed;
   height: 100%;
   width: 100%;
   background-size: 100% 100%;
