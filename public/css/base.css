@@ -10,6 +10,7 @@ body {
 
 html, body {
   height: 100%;
+  text-align: center;
 }
 #content {
   height: 100%;
@@ -36,18 +37,18 @@ html, body {
   margin-left: -480px;
   margin-top: -270px;
   /* Added for text */
-  width: 960px;
+  width: 80%;
   height: auto;
   text-align: center;
   background-color: green;
-  border: 3px black solid;
+  border: 3px #292929 solid;
 }
 
-#video-modal span {
-  font-size: 5em;
-  text-align: center;
-  color: white;
-  background-color: black;
+#video-modal img {
+  width: 80%;
+  height: 80%;
+  /*height: auto;
+  width: auto;*/
 }
 /* til here*/ 
 
@@ -81,7 +82,7 @@ html, body {
 
     /* Added until video will be ready */
     #video-modal {
-      background-color: black;
+      background-color: #292929;
       width: 100%;
       height: auto;
       position: absolute;
@@ -90,20 +91,24 @@ html, body {
       margin: auto;
     }
 
-    #video-modal span {
+    #video-modal img {
       font-size: 4em;
-      width: 80%;
+      width: 60%;
+      height: 60%;
     }
     /* til here */
   }
   @media (orientation:landscape) {
     #backchat {
-      background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
     }
     /* when video arrives reemove */
     #video-modal {
       margin-top: auto;
-      top: 30px;
+      top: 10%;
+      left: 10%;
+      margin: auto;
     }
     #video-modal span {
       font-size: 4em;
@@ -111,7 +116,7 @@ html, body {
     /* remove til here */
     @media (device-aspect-ratio: 2/3), (device-aspect-ratio: 3/2) {
       #backchat {
-        background: url('../img/bg_3_2.png') no-repeat center center fixed;   
+        background: url('../img/bg_3_2.png') no-repeat center center fixed;
       }
     }
 
