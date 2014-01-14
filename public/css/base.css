@@ -10,6 +10,7 @@ body {
 
 html, body {
   height: 100%;
+  width: 100%;
   text-align: center;
 }
 #content {
@@ -71,19 +72,19 @@ html, body {
 @media not (min-width: 1224px) {
   @media (orientation:portrait) {
     #content {
-      height: 65%;
+      height: 70% !important; /*65*/
     }
 
     #backchat {
       background-position: top;
-      background-size: 100% 65%;
+      background-size: 100% 70%; /*100 65*/
     }
     #footer {
-      height: 35%;
+      height: 30%; /*35*/
     }
     #footer div {
       vertical-align: middle;
-      height: 14.25%;
+      height: 16.6%; /*14.25*/
     }
 
     /* Added until video will be ready */
