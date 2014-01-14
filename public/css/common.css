@@ -105,7 +105,6 @@ a {
   @media (orientation:portrait) {
 
     #footer {
-      position: absolute !important;
       overflow: hidden;
       margin-top: 35%; /*40*/
       height: 35%; /*40*/
