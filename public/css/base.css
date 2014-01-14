@@ -77,7 +77,7 @@ html, body {
 
     #backchat {
       background-position: top;
-      background-size: 100% 70%; /*100 65*/
+      background-size: 100% 70% !important; /*100 65*/
     }
     #footer {
       height: 30% !important; /*35*/
