@@ -69,7 +69,7 @@ html, body {
   height: 100%;
 }
 
-@media not (min-width: 1224px) {
+@media (max-width: 1224px) {
   @media (orientation:portrait) {
     #content {
       height: 70% !important; /*65*/
@@ -80,7 +80,7 @@ html, body {
       background-size: 100% 70%; /*100 65*/
     }
     #footer {
-      height: 30%; /*35*/
+      height: 30% !important; /*35*/
     }
     #footer div {
       vertical-align: middle;
