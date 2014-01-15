@@ -4,26 +4,21 @@ require 'rack/mobile-detect'
 template_folder = './templates'
 
 {'/' => 'index.html',
-  '/jobs' => 'jobs.html',
-  '/about' => 'about.html'}.each do |key, value|
+  '/jobs' => 'jobs.html'}.each do |key, value|
   send :get, key do
     send_file File.join(template_folder, value)
   end
 end
 
-get '/privacy' do
-  if request.env['X_MOBILE_DEVICE'] 
-    send_file File.join(template_folder, 'privacy_text.html')
-  else
-    send_file File.join(template_folder, 'privacy.html')
-  end
-end
-
-get '/terms' do
-  if request.env['X_MOBILE_DEVICE'] 
-    send_file File.join(template_folder, 'terms_text.html')
-  else
-    send_file File.join(template_folder, 'terms.html')
+{'/about' => 'about',
+ '/privacy' => 'privacy',
+  '/terms' => 'terms'}.each do |key, value|
+  send :get, key do
+    if request.env['X_MOBILE_DEVICE'] 
+      send_file File.join(template_folder, "#{value}_text.html")
+    else
+      send_file File.join(template_folder, "#{value}.html")
+    end
   end
 end
 
