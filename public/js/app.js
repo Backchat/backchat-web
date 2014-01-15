@@ -2,7 +2,7 @@ $(document).ready(function() {
   var isVisible=0;
   var isIos = ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)));
   var isAndroid = (navigator.userAgent.match(/Android/i));
-  var IOS_LINK = "https://itunes.apple.com/us/app/backdoor/id659951602?ls=1&mt=8";
+  var IOS_LINK = "https://itunes.apple.com/app/backchat-anonymous-messaging/id659951602";
   var ANDROID_LINK = "https://play.google.com/store/apps/details?id=com.youtell.backchat";
   var YOUTUBE_LINK = "//www.youtube-nocookie.com/embed/y6QGP0OUaV4?rel=0&autoplay=1";
   $('#backchat').on('click', function() {
