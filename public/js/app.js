@@ -4,7 +4,7 @@ $(document).ready(function() {
   var isAndroid = (navigator.userAgent.match(/Android/i));
   var IOS_LINK = "https://itunes.apple.com/app/backchat-anonymous-messaging/id659951602";
   var ANDROID_LINK = "https://play.google.com/store/apps/details?id=com.youtell.backchat";
-  var YOUTUBE_LINK = "//www.youtube-nocookie.com/embed/y6QGP0OUaV4?rel=0&autoplay=1";
+  var YOUTUBE_LINK = "//www.youtube-nocookie.com/embed/dloOeECIDx0?rel=0&autoplay=1";
   $('#backchat').on('click', function() {
     /*if (isIos || isAndroid) {
       window.location.assign(YOUTUBE_LINK);
@@ -14,23 +14,14 @@ $(document).ready(function() {
     else {*/
       $('#video-modal').css('display', 'block');
       $('#video-modal img').remove();
-      $('#video-modal').append("<img src='/img/VideonotdoneyetTEXT.png'></img>");
-      /*$('#video-modal').append("<iframe width='960' height='540' src='" + YOUTUBE_LINK + "' frameborder='0' allowfullscreen></iframe>");*/
+      $('#video-modal').append("<iframe width='960' height='540' src='" + YOUTUBE_LINK + "' frameborder='0' allowfullscreen></iframe>");
       $('#video-overlay').css('display', 'block');
     /*}*/
   });
-  /* remove when movie exists */
-  $('#video-modal').on('click', function() {
-    $('#video-modal').css('display', 'none');
-    $('#video-overlay').css('display', 'none');
-    /**/
-    $('#video-modal img').remove();
-  })
-  /*til here */
 
   $('#video-overlay').on('click', function() {
     $('#video-modal').css('display', 'none');
-    /*$('#video-modal iframe').remove();*/
+    $('#video-modal iframe').remove();
     $('#video-modal img').remove();
     $('#video-overlay').css('display', 'none');
   });
